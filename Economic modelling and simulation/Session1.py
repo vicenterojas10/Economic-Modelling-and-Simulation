@@ -30,9 +30,9 @@ class AdvancedColorPoint(ColoredPoint):
         self._color = value
 
 
-p = AdvancedColorPoint(10, 10, "blue")
+p = AdvancedColorPoint(15, 15, "green")
 print(p)
 #let me try to hack it
-p.color = "bogdan"
+p.color = "vicente"
 
 print(p)

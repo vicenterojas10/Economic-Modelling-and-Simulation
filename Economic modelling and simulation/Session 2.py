@@ -5,7 +5,7 @@ from point import Point
 
 class ColoredPoint(Point): # this class inherits from point
     COLORS = ["red", "blue", "green", "yellow", "purple", "pink", "beige", "bordeaux",
-              "marsala", "peach", "turquoise", "saffron", "magenta"]
+              "marsala", "peach", "turquoise", "saffron", "magenta", "black", "white"]
     def __init__(self, x, y, color):
         self.x = x
         self.y = y
@@ -34,8 +34,8 @@ class ColoredPoint(Point): # this class inherits from point
 colored_points = []
 for _ in range(5):
     colored_points.append(
-        ColoredPoint(random.randint(-100, 100),
-                     random.randint(-100, 100),
+        ColoredPoint(random.randint(-50, 50),
+                     random.randint(-50, 50),
                      random.choice(ColoredPoint.COLORS)
                      )
     )
@@ -43,8 +43,8 @@ for _ in range(5):
 if __name__ == "__main__":
     print(colored_points)
     # lets add orange as an extra color
-    ColoredPoint.add_extra_color("orange")
-    p2 = ColoredPoint(3, 4, "orange")
+    ColoredPoint.add_extra_color("grey")
+    p2 = ColoredPoint(3, 4, "grey")
     p2.x = 77 # this feels wrong, lets fix it in the child class
     print(p2)
     print(f"p2={p2} and has distance to origin={p2.distance_origin}")

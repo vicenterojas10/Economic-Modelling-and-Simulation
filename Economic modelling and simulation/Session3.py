@@ -46,8 +46,8 @@ class Point:
 
 
 if __name__ == "__main__":
-    a = Point(2, 3)
-    b = Point(7, 9)
+    a = Point(3, 7)
+    b = Point(5, 11)
     print(f"a=({a.x}, {a.y})")
     print(f"b=({b.x}, {b.y})")
 
@@ -60,8 +60,8 @@ if __name__ == "__main__":
         # points.append(random_point)
 
         # or in a single line like this
-        points.append(Point(random.randint(-100, 100),
-                            random.randint(-100, 100)))
+        points.append(Point(random.randint(-200, 200),
+                            random.randint(-200, 200)))
 
 
     for point in points:
@@ -70,9 +70,9 @@ if __name__ == "__main__":
     # try to print the first point
     print("printing a point value:", points[0])
     print(points)
-    a = Point(3, 4)
+    a = Point(1, 3)
     print(f"distance origin a={a.distance_origin()}")
-    b = Point(5, 12)
+    b = Point(9, 15)
     print(f"distance origin b={b.distance_origin()}")
     print(f"a > b = {a>b}, a < b = {a < b}")
 

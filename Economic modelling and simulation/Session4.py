@@ -142,12 +142,12 @@ while True:
     d = Deck()
     d.shuffle()
     hand = Hand(d)
-    if hand.is_straight:
+    if hand.is_pair:
         tries -= 1
 
     if tries == 0:
         break
 
 probability = precision/i * 100
-print(f"The odds of getting a straight are {probability}%")
+print(f"The odds of getting a pair are {probability}%")
 
